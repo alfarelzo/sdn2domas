@@ -1,0 +1,688 @@
+
+
+
+
+<!--
+                 __
+                /\ \
+  ___    ___    \_\ \     __    ____     __     __  __     __
+ /'___\ / __`\  /'_` \  /'__`\ /',__\  /'__`\  /\ \/\ \  /'__`\
+/\ \__//\ \L\ \/\ \L\ \/\  __//\__, `\/\ \L\.\_\ \ \_\ \/\ \L\.\_
+\ \____\ \____/\ \___,_\ \____\/\____/\ \__/.\_\\/`____ \ \__/.\_\
+ \/____/\/___/  \/__,_ /\/____/\/___/  \/__/\/_/ `/___/> \/__/\/_/
+                                                    /\___/
+                                                    \/__/
+-->
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <title>CodeSaya | Belajar Coding Seru, Mudah, dan Gratis!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=0.8, maximum-scale=0.8">
+        <meta name="description" content="Codesaya | Belajar coding dan programming gratis, mudah, dan seru tanpa install apapun. Belajar Programming. Belajar Python, PHP, JavaScript, Git, dll.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+        <meta name="author" content="CodeSaya Team">
+        <meta name="og:author" content="CodeSaya Team">
+        <meta property="og:image" content="https://codesaya.com/static/img/fb_codesaya_4.jpg"/>
+
+        <meta name="theme-color" content="#252575" />
+        <meta name="msapplication-navbutton-color" content="#252575" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#252575" />
+
+        <link href="https://codesaya.b-cdn.net/static/css/bootstrap.flat.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="https://codesaya.b-cdn.net/static/css/base4.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="https://codesaya.b-cdn.net/static/js/html5shiv.js"></script>
+        <![endif]-->
+        <!-- we are moving thses to base4.css so delete this after 2 or 3 days, by then the base4.css is renewed in every user's browser-->
+        <style type="text/css"> 
+            @media (max-width: 767px) { 
+                .sticky {
+                    position:static !important;
+                }
+
+                body, pre, .btn {
+                    font-size:14px;
+                    line-height:20px;
+                }
+            }
+            @media (max-width: 480px) { 
+                body, pre, .btn {
+                    font-size:12px;
+                    line-height:18px;
+                }
+            }
+        ul.errorlist {
+            list-style-type: none;
+            margin:0;
+        }
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+    margin-top: 0;
+}
+
+.navbar .sub-menu:before {
+    border-bottom: 7px solid transparent;
+    border-left: none;
+    border-right: 7px solid rgba(0, 0, 0, 0.2);
+    border-top: 7px solid transparent;
+    left: -7px;
+    top: 10px;
+}
+.navbar .sub-menu:after {
+    border-top: 6px solid transparent;
+    border-left: none;
+    border-right: 6px solid #fff;
+    border-bottom: 6px solid transparent;
+    left: 10px;
+    top: 11px;
+    left: -6px;
+}
+
+select {
+
+    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
+        background-repeat:no-repeat;
+          background-position: right 10px top 4px;
+            background-size: 16px 16px;
+  border-radius:3px;
+  padding: 0;
+  -webkit-border-radius:3px;
+  -webkit-appearance: none;
+  border:0;
+  outline:0;
+  -webkit-transition:0.3s ease all;
+       -moz-transition:0.3s ease all;
+        -ms-transition:0.3s ease all;
+         -o-transition:0.3s ease all;
+            transition:0.3s ease all;
+}
+
+select:focus, select:active {
+      border:0;
+        outline:0;
+}
+        </style>
+
+        
+<style type="text/css">
+    .carousel-inner .item {
+        padding:0 35px;
+    }
+    .carousel-control {
+        width:20px;
+        height:20px;
+        font-size:20px;
+        line-height:15px;
+    }
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+</style>
+
+
+        <!-- Le fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" href="https://codesaya.b-cdn.net/static/img/favicon_cs.png">
+        <link rel="shortcut icon" href="https://codesaya.b-cdn.net/static/img/favicon_cs.ico">
+        <!-- Analytics
+        ================================================== -->
+        
+        <!--<script async defer data-website-id="6d5f30b8-70a8-47ab-bc04-4b550a46f4e9" src="https://um.hargaturun.com/umami.js"></script>-->
+        
+
+    </head>
+
+    <body data-spy="scroll" data-target=".bs-docs-sidebar">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazyloadjs/3.2.2/lazyload.min.js"></script>
+        <div id="wrap">
+            <!-- Navbar-->
+            <div class="navbar navbar-fixed-top">
+                <div id="div_navbar" class="navbar-inner">
+                    <div class="container">
+                        <a class="brand" style="display:none;" href="/">CodeSaya</a>
+                        <div class="bar-main_menu">
+                            <ul class="nav">
+                                
+                                <li style="margin-left:0px" class="active">
+                                <a href="/"><i class="ion-home icon-white"></i><span class="hidden-phone"> Utama</span></a>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a id="" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="ion-university icon-white"></i> Belajar
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu"  role="menu" aria-labelledby="dLabel">
+                                        <li None>
+                                            <a href="/belajar/"><i class="ion-ios-book icon-white"></i> Kelas</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li None>
+                                            <a href="/artikel/"><i class="ion-document-text icon-white"></i> Artikel</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a id="" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="ion-earth icon-white"></i> Komunitas
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu"  role="menu" aria-labelledby="dLabel">
+                                        <li None>
+                                            <a href="/diskusi/"><i class="ion-chatboxes icon-white"></i> Diskusi</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li None>
+                                            <a href="/grup/"><i class="ion-person-stalker icon-white"></i> Grup</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                            <ul class="nav pull-right">
+                            
+                              <li class="dropdown">
+                                <a id="top_right_user_menu" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                     Akun
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu"  role="menu" aria-labelledby="dLabel">
+                                <li None>
+                                <a href="/daftar/"><i class="icon-hand-up icon-white"></i> Daftar</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li None>
+                                
+                                <a href="/masuk/?next=/">
+                                
+                                <i class="ion-log-in icon-white"></i> Masuk</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li None>
+                                    <a href="/panduan/"><i class="icon-question-sign icon-white"></i> Panduan</a>
+                                </li>
+                                </ul>
+                              </li>
+                            
+                        </ul>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Begin page content -->
+
+            <div id="div_block_banner" class="main_container">
+                
+
+<div class="jumbotron masthead">
+    <div class="container">
+        <h1>Belajar coding<span class="typed"></span></h1>
+        <br/>
+        <p>
+         
+        <a href="/daftar/" class="btn btn-success ">Daftar Gratis</a>
+         
+        <a href="/belajar/" class="btn btn-primary">Mulai Belajar</a>
+        </p>
+        <ul class="masthead-links">
+            <li>
+                <a href="/python/pengenalan-python/syntax-dari-python/unit/1/">Python</a>
+            </li>
+            <li>
+            <a href="/javascript/pengenalan-javascript/saling-mengenal/unit/1/">JavaScript</a>
+            </li>
+            <!--<li>
+            <a href="/html-css">HTML & CSS</a>
+            </li>-->
+            <li>
+            <a href="/php/selamat-datang-ke-php/syntax-php/unit/1/">PHP</a>
+            </li>
+            <li>
+            <a href="/git/berkenalan-dengan-git/apa-itu-version-control/unit/1/">Git</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="bs-docs-social" style="background-color:#efefef">
+    <div class="container">
+        <ul class="bs-docs-social-buttons">
+                    <li>
+                    <a class="popup_window" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodesaya.com%2F" target="_blank">
+                        <img style="" width="75px" height="26px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAAaCAMAAADIQlGKAAABklBMVEXs7Ow6VaRFYbU7VaVHZLhGYrZEYLP///86VKM7VqZIZbk5U6JJZbpJZrpJZrtKZ7tHY7c8VqdAW6w9V6g9WKg9WKk+Wak/WqtBXK5DXq9DX7JCXrH//+80So/iwajx//8+WqhAYLM4UZ4+V6U7VKKQ0/rg//9CW+A7oeg6U6BNZKw/Wqo+Waqr3vziwq65W67z/////vY+o+j///s5So5FXJs3wPJab6+4wt48VKC3Wav87uOGsuM/U5Lhvp08wPA4WKt0W67o+f/229f4///ny8X01tDJzNB4x/NddcBnfsTHzuLK0eU6WrXy9Pnz1sz/+PLS9P/o4u5XXbLF7f356vT///zBfZrYsqaEzfaycpLz0rzT5PZLsOvs///hytdBVaeRbbE9uPFEWbWk3P0zSaMzSZpTu+7d6fdSdM6+bauyvNOyu9M+VuJGYaY/WNJyy/Xcur+EccY8as5ToejnxrT/49OWoOhcWbXIk6D55eBtuu/Kl7GtWKmtcrF+bbBDXr9BXL3m0eI+VLPmwrK5XrHa2hQkAAACL0lEQVR42uXQB08iQRQHcEF2H5xXYFC2syuISu8CogiWOzvoeV7vtuu99/a97+0sA0aSJGSTJInvn53Me5v9ZWYHTkuVVy+ct5eVMrNWzp21m1VmnXHZD7O8Li/HS53iOZe37zCL4zh5HTq1LnP9F7OcnFNi0CY+Iufknhc0rDrujqVY2ChqG7jrSdfinXFLKsdIDIDwTn5iHNv80mV8100uk5qDFO56wyyZl9tWTCFhgDgvo9XkfyazX6VZTQuNmuvswSieC62iVqdTbEMFrS7zmK6lyIZlGcKmuSqyMjF+U9vfa31/mASo3sc1e6T+y+l4rtqXxYsf6TSnb2fw6IqMYZakSG0rTs8XViS0AKv544F64/Zi6hCWHm2paWr91j83rGlOr77eUdMKfo/WJWqJohgGrIpBiFHZhjAO8I7irwgE783cykAwoj4WI2p6Ug/OAWQ/idY0p78zp6JZzCIioVbUEEi4BGgRapFJvXk9f3dGNy2DWa359w1rii21CIbdkQjEDbQ8HnN1CEQw/9fB8u61ZPbqMtQO4S/ecRo/noLgy3x7iq0QUacFgmFWQki0rTE3XYWE8Mz8X7sLjbfzcOXOwp8ktI7QypjWi63qBzrFlloJDLMCI4Exy6pEqTUSOJEpqO3vqd86fW+Y5R/2O9aAKqa55hj2n8ibHYDsq27fG2b5PD6HO4QVHXREQ9GhQY+v7zBr0GM/zIq5HXZTYtbT0pDbXmJPBk5H/QcyF30G3XX2lgAAAABJRU5ErkJggg==">
+                    </a>
+                    </li>
+                    <li>
+                    <a class="popup_window" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fcodesaya.com%2F&text=Saya%20merekomendasikan%20CodeSaya%20untuk%20belajar%20coding!%20Belajar%20%26%20Diskusi%20PHP%2C%20JS%2C%20Git%2C%20dll." target="_blank"><img style="" width="123px" height="22px" src="data:image/png;base64,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"></a>
+                    </li>
+                    <li class="hidden-phone">
+                    <a class="hidden-phone popup_window" href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fcodesaya.com%2F&screen_name=codesaya" target="_blank"><img width="116px" height="28px" style="" src="data:image/png;base64,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"></a>
+                    </li>
+                    <li>
+                    <a class="popup_window" href="https://plus.google.com/share?url=http%3A%2F%2Fcodesaya.com%2F" target="_blank"><img width="72px" height="24px" style="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAAYCAMAAABuvUuCAAABL1BMVEXs7Ozuo5j88vHrrlzmdWWFJSMmJibT09P////fSjH//82r6f/d3d0lI2Xkalj09fVgrOzsl4siYa/rjX/O//8lI4frvHXq/83/0H730Mzyu7P53NinXB3gUzwdgtEqJip9WC8mJHtWo9v0+Nva2trk5OT/+9kffMa+6/Hwr6bogXHwr6XiXkr4//+89P9WMyQfdcMlMl6uYxtkOioyVID4/+FcVSL/47n415yKrNi64v8kitGBx/PkvIjiq10oJ2VLJ0coNlbx8e72zX7XnkaucDRBJGUkP4b75+X2xr9LidGFQSHi/+okTXL/+MbJhDqr4v+Xx+wrOWWhYzV8rN+r6upKn9F7uuX/6tTktWsmJjrrtWNts+XBs9jH1urc/81NY2kkRKLQhBE5VU5OTkfYdkG0AAABV0lEQVR42s3Ux3LCMBQFUGQL+z0gBtMSqumd9B4CJJT03nv9/2+IsJkxAyReKAvuQos74zPPsiXbhMYl8yXTdzJu4IvbZUAy8EYegEKEImKYGwpRgDD6+CeqELYoCH/m/tVh91hAWGILQQHMOOyStHMHA2l/vFlClRgzVNojTSi12w74YTDWE0ViykGYCgZkPvQU8K8lpOXNXEf76jpF77Td02rW9Eo8SWiH1REIhJAPI4zpxXy1x2fY3liJbol7heCUDr03a/0qWQgmZ0cgFhV9MDxRq+tcX5Kk+GceZgxIapyDXokBP6tGIKFIfQoqwtAePTRuFufT0bg50e2Z91ivxkORWJkZZSTDX+26GpxbWM2nO9q3AXlOj1J6VR8LKVQvShTGJ/firrMNsf4h0RAI+Q260i4vAKwhFYsAsE8F7iNCKFKVcJ9+3sj/fLFlua/arG3y8gM/yUQ5jhL4hwAAAABJRU5ErkJggg=="></a>
+                    </li>
+
+ 
+        </ul>
+    </div>
+</div>
+
+
+                <div class="container">
+                    <div id="div_block_main_content" class="row">
+                        
+
+<div class="marketing">
+    <h1>Memperkenalkan CodeSaya.</h1>
+    <p class="marketing-byline">Teman anda dalam belajar coding.</p>
+    <div class="row-fluid">
+        <div class="span4">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  onload="lzld(this)"
+                  class="marketing-img" data-src="https://codesaya.b-cdn.net/static/img/home-study.jpeg">
+            <h2>Platform Belajar</h2>
+            <p>CodeSaya adalah tempat bagi yang ingin belajar teknologi khususnya dalam coding <a href="/python/">Python</a>, <a href="/php/">PHP</a>, <a href="/javascript/">JavaScript</a>, dan lain-lain.</p>
+        </div>
+        <div class="span4">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  onload="lzld(this)"
+                  class="marketing-img" data-src="https://codesaya.b-cdn.net/static/img/home-interactive.jpeg">
+            <h2>Coding Interaktif</h2>
+            <p>Setelah mempelajari suatu topik, anda akan menghadapi soal coding yang jawabannya anda langsung ketik di browser tanpa install apapun.</p>
+        </div>
+        <div class="span4">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  onload="lzld(this)"
+                  class="marketing-img" data-src="https://codesaya.b-cdn.net/static/img/home-badge.jpeg">
+            <h2>Lencana Keren</h2>
+            <p>Dapatkan kado berupa <a href="/lencana/pasukan-khusus-php/14/">lencana keren</a> dari kami. Lencana yang didapat bisa anda tunjukan ke social media atau bandingkan dengan <a href="/terbaik/">coder terbaik</a> kami.</p>
+        </div>
+    </div>
+
+    <hr class="soften">
+     
+    <center>
+                
+<!-- displaying ads -->
+<a class="ads_image" href="https://s.blibli.com/GNtk/w2l5meos">
+    <img class="" height="60px" width="320px" 
+    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    onload="lzld(this)"
+    data-src="https://codesaya.b-cdn.net/static/img/banner_blibli.png">
+</a>
+
+<br>
+<br>
+<!--
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+    style="display:inline-block;width:320px;height:50px"
+    data-ad-client="ca-pub-3842907543632795"
+    data-ad-slot="3451447202"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+-->
+</script>
+
+    </center>
+    
+    <div class="row-fluid">
+        <div class="span6">
+            <h1>Kenapa belajar Coding?</h1>
+            <p class="marketing-byline">Siapapun anda, sebaiknya anda belajar coding.</p>
+            <br/>
+            <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <p class="marketing-quote">"Saya pikir semua orang harus belajar coding, karena coding mengajarkan anda berpikir."</p>
+                        <p class="marketing-byline">Steve Jobs, pendiri Apple.</p>
+                    </div>
+                    <div class="item">
+                        <p class="marketing-quote">"Kebijaksanaan di Facebook adalah meng-hire coder berkualitas sebanyak mungkin. Tapi pasar saat ini tidak menyediakan stock yang cukup."</p>
+                        <p class="marketing-byline">Mark Zuckerberg, pendiri Facebook.</p>
+                    </div>
+                    <div class="item">
+                        <p class="marketing-quote">"Anda tidak harus menjadi jenius untuk bisa coding. Pertambahan, pengurangan... itu sudah cukup!"</p>
+                        <p class="marketing-byline">Bill Gates, pendiri Microsoft.</p>
+                    </div>
+                    <div class="item">
+                        <p class="marketing-quote">"Entah untuk mengungkap rahasia alam semesta atau mencari kerja di abad 21, pemograman computer adalah kecakapan yang penting."</p>
+                        <p class="marketing-byline">Stephen Hawking, cendekiawan fisika.</p>
+                    </div>
+                    <div class="item">
+                        <p class="marketing-quote">"Coding sangat penting apabila anda memikirkan tentang masa depan. Dengan semakin banyaknya telepon dan computer yang dirakit."</p>
+                        <p class="marketing-byline">Chris Bosh, pemain NBA, Miami Heat.</p>
+                    </div>
+                    <div class="item">
+                        <p class="marketing-quote">"Coders yang hebat adalah rock star masa kini! Titik!"</p>
+                        <p class="marketing-byline">Will.i.am, anggota Black Eyed Peas.</p>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div>
+        </div>
+
+        <div class="span6">
+            <h1>Artikel CodeSaya</h1>
+            <p class="marketing-byline">Artikel seputar dunia coding & IT dari anggota CodeSaya.</p>
+            <div class="single_post " style="text-align:left;">
+                <h2><a href="/a/3-alternatif-membuat-slide-presentasi-dengan-javascript-dan-html5-vcguetsdaz/">
+                                3 Alternatif Membuat Slide Presentasi Dengan JavaScript dan HTML5</a></h2>
+                <div class="blog_content">
+                
+                <p>Sebagai seorang mahasiswa/i atau pekerja yang sering berurusan dengan dengan pemaparan tugas, materi ataupun ...</p>
+                
+                </div> 
+                 <a href="/a/3-alternatif-membuat-slide-presentasi-dengan-javascript-dan-html5-vcguetsdaz/">Lanjutkan membaca</a>
+            </div>
+        </div> 
+        <br/>
+    </div>
+
+    <hr class="soften">
+
+     
+    <center>
+            <a href="https://s.blibli.com/GNtk/48qdx3p1">
+            <img class="marketing-img" width="320px" height="60px" data-src="https://codesaya.b-cdn.net/static/img/banner_blibli.png"
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            onload="lzld(this)">
+            </a>
+    </center>
+    
+
+    <div class="row-fluid">
+
+        <div class="span4">
+                <h2>Coder Terbaik Minggu Ini</h2>
+            <p class="marketing-byline">Coder yang paling jenius.</p>
+            <div class="container-fluid">
+            
+                    <a href="/u/qyy/"><img style="height:120px;width:120px;" class="img-polaroid " 
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          onload="lzld(this)"
+                          data-src="https://secure.gravatar.com/avatar/5ecf34084f1cea7f6b4bc4348d97a5db?s=120&amp;d=monsterid" /></a>
+                    <p>
+                        <span class="profile_name"><a href="/u/qyy/">qyy</a></span>
+                        <span class="profile_point label label-info">128</span>
+                        <span class="profile_point label ">0</span>
+                        <br/> 
+                        
+                    </p>
+            </div>
+        </div>
+
+        <div class="span4">
+                <h2>Coder Terpopuler Minggu Ini</h2>
+            <p class="marketing-byline">Coder yang banyak membantu coder lain.</p>
+            <div class="container-fluid">
+                    <a href="/u/bramanto/"><img style="height:120px;width:120px;" class="img-polaroid " 
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          onload="lzld(this)"
+                          data-src="https://secure.gravatar.com/avatar/e47f25eea2a5645c6103c4ca4dc54d2d?s=120&amp;d=monsterid" /></a>
+                    <p>
+                        <span class="profile_name"><a href="/u/bramanto/">bramanto</a></span>
+                        <span class="profile_point label label-important">300</span>
+                        <span class="profile_point label label-important">1157</span>
+                        <br/> 
+                        
+                            <i class="icon-map-marker"></i> Jakarta, Indonesia
+                        
+                    </p>
+            </div>
+        </div>
+
+        <div class="span4">
+                <h2>Rookie Terjago Hari Ini</h2>
+            <p class="marketing-byline">Coder dengan masa depan yang cerah.</p>
+            <div class="container-fluid">
+                    <a href="/u/Sekarfajariyah193/"><img style="height:120px;width:120px;" class="img-polaroid " 
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          onload="lzld(this)"
+                          data-src="https://secure.gravatar.com/avatar/eb3b9fb60a8d3e350350349d5bb3fa97?s=120&amp;d=monsterid" /></a>
+                    <p>
+                        <span class="profile_name"><a href="/u/Sekarfajariyah193/">Sekarfajariyah193</a></span>
+                        <span class="profile_point label ">24</span>
+                        <span class="profile_point label ">0</span>
+                        <br/> 
+                        
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span12 center">
+            </br>
+            <p class="marketing-byline">
+            Keren! 4 menit yang lalu, <a href="/u/Fadhyl/">Fadhyl</a> baru saja jadi
+            <a href="/lencana/kopral/2/">Kopral</a>!
+            <br/>Untuk melihat coder-coder terbaik, lihat di <a href="/terbaik/">sini</a>.
+            </p>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+    <hr class="soften">
+        <div class="span12">
+            <h4>Telah Diliput Oleh</h4>
+            <a alt="Belajar Coding Secara Interaktif di Codesaya.com" href="/tentang/#pers">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      onload="lzld(this)"
+                      width="140" title="Belajar Coding Secara Interaktif di Codesaya.com" data-src="https://codesaya.b-cdn.net/static/img/logo-metro.png"></a>
+                &nbsp;
+            <a alt="Wawancara Khusus: Belajar Coding tanpa Pusing di CodeSaya" href="/tentang/#pers">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      onload="lzld(this)"
+                      width="140" title="Wawancara Khusus: Belajar Coding tanpa Pusing di CodeSaya" data-src="https://codesaya.b-cdn.net/static/img/logo-liputan6.png"></a>
+                &nbsp;
+            <a alt="Aplikasi Ini Permudah Belajar Coding" href="/tentang/#pers">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      onload="lzld(this)"
+                      width="140" title="Aplikasi Ini Permudah Belajar Coding" data-src="https://codesaya.b-cdn.net/static/img/logo-okezone.png"></a>
+                &nbsp;
+            <a alt="Gampang Belajar Coding di CodeSaya" href="/tentang/#pers">
+                <img 
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      onload="lzld(this)"
+                      width="140" title="Belajar Pemrograman Interaktif Berbahasa Indonesia di CodeSaya" data-src="https://codesaya.b-cdn.net/static/img/logodetikinet.png"></a>
+                &nbsp;
+            <a alt="CodeSaya: Belajar Coding via Online" href="/tentang/#pers">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      onload="lzld(this)"
+                      width="140" title="CodeSaya: Belajar Coding via Online" data-src="https://codesaya.b-cdn.net/static/img/selular_logo.png"></a>
+            <a alt="CodeSaya Wadahi Pembelajar Pemrograman dengan Metode Belajar Interaktif" href="/tentang/#pers">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      onload="lzld(this)"
+                      width="140" title="CodeSaya Wadahi Pembelajar Pemrograman dengan Metode Belajar Interaktif" data-src="https://codesaya.b-cdn.net/static/img/dailysocial_logo.jpg" ></a>
+            <a alt="Belajar Pemrograman Interaktif Berbahasa Indonesia di CodeSaya" href="/tentang/#pers">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      onload="lzld(this)"
+                      width="140" title="Belajar Pemrograman Interaktif Berbahasa Indonesia di CodeSaya" data-src="https://codesaya.b-cdn.net/static/img/codepolitan_new_logo.png"></a>
+        </div>
+    </div> 
+
+         
+    <hr class="soften">
+    <div class="row-fluid">
+        <div class="span12 center">
+                <p class="marketing-byline">
+                    Marilah bergabung dengan lebih dari <b>117.000 anggota</b> dan belajar bersama
+                </p>
+                <p class="marketing-byline">
+                    <a href="/daftar/" class="btn btn-success ">Daftar Gratis</a>
+                    <a href="/masuk/" class="btn btn-primary ">Masuk</a>
+                </p>
+        </div>
+    </div>
+         
+
+        </br>
+</div>
+
+ <!-- main content block -->
+
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- main container -->
+            <div id="push"></div>
+        </div> <!-- wrapper -->
+
+        <!-- Footer -->
+        <div id="footer">
+            <footer class="footer">
+            
+            <div class="container">
+                <p><a href="/">CodeSaya</a> adalah tempat belajar coding yang mudah, seru, dan gratis.</p>
+                <p>Dirakit oleh <a href="/u/ganis/">coder Indonesia</a> dengan <a href="http://python.org/">perangkat</a> <a href="http://djangoproject.com/">open</a> <a href="http://getbootstrap.com/">source</a>
+                dan berumah di <a href="https://m.do.co/c/e2473f219e83" target="_blank">DigitalOcean</a>.</p>
+                <ul class="footer-links">
+                    <li><a href="/tentang/">Tentang</a></li>
+                    <li class="muted">&middot;</li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li class="muted">&middot;</li>
+                    <li><a href="https://www.facebook.com/codesayadotcom">Facebook</a></li>
+                    <li class="muted">&middot;</li>
+                    <li><a href="https://twitter.com/CodeSaya">Twitter</a></li>
+
+                </ul>
+            </div>
+            
+            <footer class="footer footer_below">
+            <div class="container">
+                <ul class="bs-docs-social-buttons">
+                    <li>
+                    <a class="popup_window" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodesaya.com%2F" ><img style="" width="75px" height="26px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAAaCAMAAADIQlGKAAABklBMVEXs7Ow6VaRFYbU7VaVHZLhGYrZEYLP///86VKM7VqZIZbk5U6JJZbpJZrpJZrtKZ7tHY7c8VqdAW6w9V6g9WKg9WKk+Wak/WqtBXK5DXq9DX7JCXrH//+80So/iwajx//8+WqhAYLM4UZ4+V6U7VKKQ0/rg//9CW+A7oeg6U6BNZKw/Wqo+Waqr3vziwq65W67z/////vY+o+j///s5So5FXJs3wPJab6+4wt48VKC3Wav87uOGsuM/U5Lhvp08wPA4WKt0W67o+f/229f4///ny8X01tDJzNB4x/NddcBnfsTHzuLK0eU6WrXy9Pnz1sz/+PLS9P/o4u5XXbLF7f356vT///zBfZrYsqaEzfaycpLz0rzT5PZLsOvs///hytdBVaeRbbE9uPFEWbWk3P0zSaMzSZpTu+7d6fdSdM6+bauyvNOyu9M+VuJGYaY/WNJyy/Xcur+EccY8as5ToejnxrT/49OWoOhcWbXIk6D55eBtuu/Kl7GtWKmtcrF+bbBDXr9BXL3m0eI+VLPmwrK5XrHa2hQkAAACL0lEQVR42uXQB08iQRQHcEF2H5xXYFC2syuISu8CogiWOzvoeV7vtuu99/a97+0sA0aSJGSTJInvn53Me5v9ZWYHTkuVVy+ct5eVMrNWzp21m1VmnXHZD7O8Li/HS53iOZe37zCL4zh5HTq1LnP9F7OcnFNi0CY+Iufknhc0rDrujqVY2ChqG7jrSdfinXFLKsdIDIDwTn5iHNv80mV8100uk5qDFO56wyyZl9tWTCFhgDgvo9XkfyazX6VZTQuNmuvswSieC62iVqdTbEMFrS7zmK6lyIZlGcKmuSqyMjF+U9vfa31/mASo3sc1e6T+y+l4rtqXxYsf6TSnb2fw6IqMYZakSG0rTs8XViS0AKv544F64/Zi6hCWHm2paWr91j83rGlOr77eUdMKfo/WJWqJohgGrIpBiFHZhjAO8I7irwgE783cykAwoj4WI2p6Ug/OAWQ/idY0p78zp6JZzCIioVbUEEi4BGgRapFJvXk9f3dGNy2DWa359w1rii21CIbdkQjEDbQ8HnN1CEQw/9fB8u61ZPbqMtQO4S/ecRo/noLgy3x7iq0QUacFgmFWQki0rTE3XYWE8Mz8X7sLjbfzcOXOwp8ktI7QypjWi63qBzrFlloJDLMCI4Exy6pEqTUSOJEpqO3vqd86fW+Y5R/2O9aAKqa55hj2n8ibHYDsq27fG2b5PD6HO4QVHXREQ9GhQY+v7zBr0GM/zIq5HXZTYtbT0pDbXmJPBk5H/QcyF30G3XX2lgAAAABJRU5ErkJggg=="></a>
+                    </li>
+                    <li class="hidden-phone">
+                    <a class="hidden-phone popup_window" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fcodesaya.com%2F&text=Saya%20merekomendasikan%20CodeSaya%20untuk%20belajar%20coding!%20Belajar%20%26%20Diskusi%20Python%2C%20PHP%2C%20JS%2C%20Git%2C%20dll." >
+                        <img width="123px" height="22px" style="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAAWCAMAAADXcxPJAAAC+lBMVEXs7Oz19fXz8/P4+Pj+/v4zMzPk5OTMzMz6+vrf39/h4eH8/Pzg4OD9/f35+fnj4+Pi4uL29vb39/fo6OgArO7n5+jt7u3q6urw8PDy8/Lx8vLo5+UAq+3s6+zp6env7+9EMzPm8PIzM2Lt6efm5uYzM0Tc3Nzx7uvTpWkApubn6e3t8/Py8fDI5fEyUaLX19egz+bn7Ozw8ufp6++52uuoZDPx69Pz8+yxsrL19e6FYjIAjsUAouHNzc0Als98zevX1dX16cYyYqXu8PJLc5mx1OYyMoBDMzOt2O7p8O8AqOmZydszMlGIxOXu1rVRMzPc7O/iwYYyUKm7m3RjMzJpMzK/hkPWrGjm5+tAo87OpGNdrc3pzp2DYkTu7One6OjD4+1Pocfx8vYyRHibssXVwbFin8zs7/CHMjIzRJ3t7fHv2bBiMzJkSDKHwd91MzN4pMKaxuWhsrLY8PWhUTLI6u3v6MXeyaKtpJ7ApXuk0O1IZHrHm1BNh8Pkzqmb1OkutOYmlcEyQ2QAnNh1rtbS0tIAntrbuHsOj8EOrOozUYe3dDIzMmhQodPErnGfzOJ7udanpI/X4eXu7+hwcHCGs9RhMzLR6+/LroGct9V1RDquxdzs7tlpmrszY5m0h2Lj7uKxw9Xx89uZhmOgrL6km4SGmZ+zgVHp3rXEwKnasXUydrJEQ2L39/DVsYaxt6vZxqd0h5Cyu8i7nXqzejN8rcaYe2LLv7JPeanQxLKfzMqieET38Ns7RER1bFo7SobVoVkyY7Ivt+texe2KwdYwseEOm9HF3ehrutg8rNVWp8VPweyb2PC5iXYzMlBFaYlFZGmIs9jr7/KmRTLImGPk4chRhrnUtph0o8eHsMKvdER1n6va2sKamqyyrKZieqIydK96UER7MjNFibrQ7tOHRTJDT3QzesSvv66yrHpRmbS2x8Hi9fXChlDs4dDatobP1cAyYqu6pmdiaWOrm3mqck+zs5ozX4K7u7SsuNG/rKChm2m02dm709txVZjcAAAEAElEQVR42sWWZ1BUVxiGdy95IcWUbXfNZRtb2d1LXZZFegfpvYMgFgRBEQELWLCgKETFHk3UxFhiTDTNXtJ777333utMzj0XZ/iBmfyJ+3wz333Pnu+7z5/dmZV4E11InJ8XCNERd6JVetmlx8caQtx+8quu9kIxcYL7cu/gJ7iv8fFKUbdMLpMHyGl/aF22LIDk/1Z36FxiGnb9y8zki9xQt5TQkC30pTExMZVLs6UT3BCYJh2LCVN3i+EwgLURUmlkLZCzbfRIIBaMzBYDOPaVdCyomyFUxlQ7mEfjY+2xyx6pZzxPb2zFcxufZ8bC8+IMp/DsMf5tHTeEzD0f4Nn1BuSOGilHqBj6kfpbNAaZsaBujuf4xSvjV1U/FqtRauyZDM/IfcqR6ZO0/TWu+JP6yPd3hhcDs538q/l4t+ANoHELx7fgLzdg/LP3ID70kbUYevm8WvRt4z3zM/paESpulGO57NS8G8PvzsDCiG8PZfKHD6XRTJzUrSc8brevjF9mVyqVdk4vEIhQ/Z6m9F1NyC1EbhmmzMfyQuw8kP/e8e2NRyfq9TVFQ+kd5853n6/CAr1+slzWNdM4JxrthUj9xYBQcSPPACz83RmIe+9C8H70Ds9NH6KZvIC6WULQao0mK0ujVGoeZinEzTZX5XxWgi/2GT+aZbztFsxw48he5HS6i5w2lq0ZODnIr6kuryRulh1O3FCDXCbJ0FCWE8ScwwlxI+DUH2eA2z33R92HZCL+Lr9BzBNZlrq1Eq2ETVitpGQtJidSgbhBK8kDBj4nu5GlljlR8251482od96e5C4KIxMtOIMMnD5b0I9XhFPRIrRru/IHy4ydkkCcEDd+PtshTSpN/wGpd5YEu/pxGhFVNJM3ULdaIGKJRlBrloxXU4hbrd7RhE/3A23Na4y7p86cdhCvvxWdvGvuM1Mq1OoXenDk6PHotfWRs5C6fjPauwyNX55EWyGOHShFqLjRg1+jfsL391jSupGs6ypBcNhIVqupWyEgCXpSQ9QPBChEiFuhcLyEth0fGzt1kdHATQXDNws/Ku1WWOrJhHNrBtCXVudIqgUsm2yubgMwmx3eB/yINHEjnGxgIGiRARZD8CTX11hnGskKBXWrzKoNT6yKF77kDwaoyEmoFMYmdgfHmFQOTsLypgrOxvI2cwr5hNypUjhThTDl4urMTr3KPJ1jnbx/Bcc2c5ztwobHFHZ93XQPyzH8N3tbjVvMYjaZVdTtS+CDEhISnurgfS+GQiF0Femj0OlGLnX+4tNf7KM2zDqF0IX28mbLJhPNFOq+9jpSZpZl1b4k/X9VMZ6vG3WmbuuV47xQ1jjiTlxhveLSY10RQty6RG/9Z/Iq/wAX+UvnUij0igAAAABJRU5ErkJggg==">
+                    </a>
+                    </li>
+                    <li class="hidden-phone">
+                    <a class="popup_window" href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fcodesaya.com%2F&screen_name=codesaya" ><img width="116px" height="28px" style="" src="data:image/png;base64,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"></a>
+                    </li>
+                    <li class="">
+                    <a class="popup_window" href="https://plus.google.com/share?url=http%3A%2F%2Fcodesaya.com%2F" ><img width="72px" height="24px" style="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAAYCAMAAABuvUuCAAABL1BMVEXs7Ozuo5j88vHrrlzmdWWFJSMmJibT09P////fSjH//82r6f/d3d0lI2Xkalj09fVgrOzsl4siYa/rjX/O//8lI4frvHXq/83/0H730Mzyu7P53NinXB3gUzwdgtEqJip9WC8mJHtWo9v0+Nva2trk5OT/+9kffMa+6/Hwr6bogXHwr6XiXkr4//+89P9WMyQfdcMlMl6uYxtkOioyVID4/+FcVSL/47n415yKrNi64v8kitGBx/PkvIjiq10oJ2VLJ0coNlbx8e72zX7XnkaucDRBJGUkP4b75+X2xr9LidGFQSHi/+okTXL/+MbJhDqr4v+Xx+wrOWWhYzV8rN+r6upKn9F7uuX/6tTktWsmJjrrtWNts+XBs9jH1urc/81NY2kkRKLQhBE5VU5OTkfYdkG0AAABV0lEQVR42s3Ux3LCMBQFUGQL+z0gBtMSqumd9B4CJJT03nv9/2+IsJkxAyReKAvuQos74zPPsiXbhMYl8yXTdzJu4IvbZUAy8EYegEKEImKYGwpRgDD6+CeqELYoCH/m/tVh91hAWGILQQHMOOyStHMHA2l/vFlClRgzVNojTSi12w74YTDWE0ViykGYCgZkPvQU8K8lpOXNXEf76jpF77Td02rW9Eo8SWiH1REIhJAPI4zpxXy1x2fY3liJbol7heCUDr03a/0qWQgmZ0cgFhV9MDxRq+tcX5Kk+GceZgxIapyDXokBP6tGIKFIfQoqwtAePTRuFufT0bg50e2Z91ivxkORWJkZZSTDX+26GpxbWM2nO9q3AXlOj1J6VR8LKVQvShTGJ/firrMNsf4h0RAI+Q260i4vAKwhFYsAsE8F7iNCKFKVcJ9+3sj/fLFlua/arG3y8gM/yUQ5jhL4hwAAAABJRU5ErkJggg=="></a>
+                    </li>
+
+
+                </ul>
+            </div>
+            </footer>
+            </footer>
+        </div>
+
+<script type="text/javascript">
+var is_user_premium = 0;
+ 
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.min.js"></script>
+<script type="text/javascript" src="https://codesaya.b-cdn.net/static/js/base4.js"></script>
+
+ 
+<script type="text/javascript" src="https://codesaya.b-cdn.net/static/js/showads.js"></script>
+ 
+
+
+
+
+
+
+<script type="text/javascript">
+    $('.carousel').carousel({
+        interval: 7000
+        })
+    $(function(){
+      $(".typed").typed({
+        strings: ["^1500 seru..", "^1000 mudah..", "^1000 gratis..", "^1000 ya di ^1000CodeSaya!^5000 =)^2000"],
+        typeSpeed: 140,
+        loop: true,
+        backDelay: 1250,
+        startDelay: 100
+      });
+  });
+</script>
+
+
+<script type="text/javascript">
+
+$(window).bind("load", function() {
+        $('.popup_window').popupWindow({ 
+                centerScreen:1 
+        }); 
+
+    $('.dropdown-toggle').dropdown();
+
+        if( typeof canRunAds === 'undefined' ){ 
+                $('a.ads_image').removeClass('hidden');
+        } else {
+        }
+});
+
+
+</script>
+
+
+</body>
+</html>
+<!-- 5QS0ktgbuRA7qmFPj8TL8Bj0sV -->
